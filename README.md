@@ -292,7 +292,8 @@ Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
 `[Upload image and link here]`
-<img width="867" height="1156" alt="" src="" />
+<img width="1398" height="886" alt="Embbeded_circuit" src="https://github.com/user-attachments/assets/ddf764f8-c613-47f9-a677-1dec2ce650e8" />
+
 
 
 # 7.4. Power Plan
