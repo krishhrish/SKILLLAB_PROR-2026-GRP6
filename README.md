@@ -64,7 +64,7 @@ By the final review, this README should clearly show:
 | Name                  | Primary Role                    | Secondary Role   | Strengths Brought to the Project |
 | --------------        | ------------------------------- | --------------   | -------------------------------- |
 | `Hrishikesh Kumbhar ` | `[Ideation,assigning task ]`    | `testing and interfacing sensor `  | `Integration of system,soldering `|
-| `Nandini Sondkar `    |  `[Testing and Interfacing sensor,Documentation]` | `Ideation`    |`Repo management and sensor interfacing`
+| `Nandini Sondkar `    |  `[Repo management ,Documentation]` |`Sensor interfacing and testing`    |`Git Documentation and updation,sensor integration`
 | `Shreenidhi Dumbre`   | `[Raspi setup,web server integration,sensor implemntation]`|`[]Ideation and documentation`|`Basic coding,hardware integration,debugging`|
 ## 1.3 Project Title
 
@@ -379,8 +379,7 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-<img width="1600" height="1200" alt="image" src="" />
-<img width="1600" height="1200" alt="image" src="" />
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/6343a985-7cf7-4f78-9ab7-4a014e0a23e5" />
 
 
 
@@ -421,7 +420,7 @@ Lithium-ion batteries were selected due to their rechargeable nature, portabilit
 | Item                 | Why Needed               | Purchase Link | Latest Safe Date to Procure | Status       |
 | -------------------- | ------------------------ | ------------- | --------------------------- | ------------ |
 | Raspberry Pi 3 Model B|	Main controller, handles web interface|-|-|used|
-|Arduino Uno	|Real-time motor and sensor control|-|used|
+|Arduino Uno	|Real-time motor and sensor control|-|-|used|
 |L298N Motor Driver Module	|Drives DC motors and controls direction/speed|-|-|used|
 |BO Motors + Wheels	|Drive system for car|-|-|used|
 |Motor Shield (if separate)	|Simplifies motor connections|-|-|used|
@@ -491,7 +490,14 @@ Overall, our team followed a cooperative and flexible working approach, which he
 
 | Task ID | Task                    | Owner    | Estimated Hours | Deadline     | Dependency | Status |
 | ------- | ----------------------- | -------- | ---------------:| ------------ | ---------- | ------ |
-| T1      | `[Finalize concept]`    | `[Both]` | `2`             | `1st April`  | `None`     | `Done` |
+|T1|	Project Ideation & Task Assignment|	Hrishikesh Kumbhar|	2	|30th April	|None	|Done|
+|T2	|Raspberry Pi Setup & Web Server Integration	|Shreenidhi Dumbre|	4	|30th April	|None|T1	Done|
+|T3	|Sensor Interfacing & Implementation	|Hrishikesh / Nandini	|3	|30th April|None	|T2	Done|
+|T4	|Repository Management & Git Updation	|Nandini Sondkar	|2|	30th April	|None|T1	Done|
+|T5	|System Integration & Soldering	|Hrishikesh Kumbhar|	4	|30th April|None|	T3	Done|
+|T6	|Testing & Debugging	|All|	3	|30th April	|None|T5	Done|
+|T7	|Project Documentation	|Nandini Sondkar	|3	|30th April	|None|All	Done|
+
 
 
 ## 10.3 Responsibility Split
@@ -557,10 +563,10 @@ Expected outcomes:
 
 | Days   | Planned Goal   | What Actually Happened | What Changed   | Next Steps     |
 | ------ | -------------- | ---------------------- | -------------- | -------------- |
-|10:00–11:30|	Hardware setup & basic connections	|Wiring completed between Raspberry Pi, Arduino, motor driver|	Took time to verify correct pin connections	Recheck and secure all connections|
-|11:30–12:30|	Sensor & display interfacing	|MPU connected; display partially working	|Display required extra configuration	Fix display output and test visualization|
+|10:00–11:30|	Hardware setup & basic connections	|Wiring completed between Raspberry Pi, Arduino, motor driver|	Took time to verify correct pin connections	|Recheck and secure all connections|
+|11:30–12:30|	Sensor & display interfacing	|MPU connected; display partially working	|Display required extra configuration|	Fix display output and test visualization|
 |12:30–2:00	|Motor testing & communication setup|	Motors worked; |Arduino–Pi communication established	Inconsistent motor movement; minor code issues|	Calibrate motors and optimize communication
-|2:00–4:00	|Control logic & full system testing	|Basic movement achieved; system partially working|	Delays and synchronization issues	Improve logic, debug errors, enhance performance|
+|2:00–4:00	|Control logic & full system testing	|Basic movement achieved; system partially working|	Delays and synchronization issues	|Improve logic, debug errors, enhance performance|
 
 ---
 
@@ -604,11 +610,11 @@ The biggest uncertainty in the project at this stage is maintaining stable real-
 
 | Date          | Problem Found                         | Type         | What You Tried                                | Result               | Next Action                                    |
 | ------------- | ------------------------------------- | ------------ | --------------------------------------------- | -------------------- | ---------------------------------------------- |
-|10:00 AM	|MPU readings not displaying properly on OLED|	Sensor / Software	Checked I2C connections and recalibrated MPU sensor	|Improved	|Fine-tune sensor values
-|11:00 AM	|Website controls not responding smoothly	|Frontend	Modified control button handling and refreshed backend connection	|Worked	|Improve UI design|
-|12:00 PM	|Delay in car movement after sending commands|	Backend / Communication	Optimized command processing and reduced response delay|	Improved|	Test with multiple devices|
-|1:00 PM	|IR sensor not detecting obstacles correctly	Sensor	Adjusted sensor placement and detection range	|Worked partially	|Increase detection accuracy|
-|2:00 PM	|Autonomous mode giving unstable turns	|Logic	Updated obstacle avoidance conditions in the code|	Improved|	Perform navigation testing
+|10:00 AM	|MPU readings not displaying properly on OLED|	Sensor / Software	|Checked I2C connections and recalibrated MPU sensor	|Improved	|Fine-tune sensor values|
+|11:00 AM	|Website controls not responding smoothly	|Frontend|	Modified control button handling and refreshed backend connection	|Worked	|Improve UI design|
+|12:00 PM	|Delay in car movement after sending commands|	Backend / Communication	|Optimized command processing and reduced response delay|	Improved|	Test with multiple devices|
+|1:00 PM	|IR sensor not detecting obstacles correctly|	Sensor|	Adjusted sensor placement and detection range	|Worked partially	|Increase detection accuracy|
+|2:00 PM	|Autonomous mode giving unstable turns	|Logic	|Updated obstacle avoidance conditions in the code|	Improved|	Perform navigation testing
                |
 
 
@@ -666,7 +672,15 @@ Suggested images:
 - mechanism test,
 - app screenshot,
 - final build.
-- <img width="960" height="1280" alt="WhatsApp Image 2026-04-24 at 9 46 02 AM (1)" src="https://github.com/user-attachments/assets/74baa570-5770-483e-be6d-d2f03386e37c" />
+- <img width="1600" height="1209" alt="image" src="https://github.com/user-attachments/assets/62288a61-7ab8-4286-94bf-1b50421279f5" />
+-<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/ef47cbd3-4941-4065-a0f2-4e9eae473e1c" />
+-<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/83e07462-4244-464d-b9b8-537b919eb7ba" />
+-<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/7682ce26-65fc-4a08-817c-110371a2da5d" />
+-<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/3e424356-0609-42ce-b024-4d9492ca4a02" />
+-<img width="887" height="683" alt="image" src="https://github.com/user-attachments/assets/7db2d7fc-e16e-4718-90d2-19534845c523" />
+
+
+
 
 
 
